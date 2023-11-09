@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/grid.css" />
+    <title>Contacto</title>
+  </head>
+  <body>
+    <header id="top" class="borde-redondo">
+      <div class="logo">
+        <img
+          src="./img/PB.jpeg"
+          alt="logotipo Pizzeria Bicicleta"
+          class="logo-nombre"
+        />
+        <h1 class="titulo">Pizzeria La Bicicleta</h1>
+      </div>
+
+      <nav class="navegacion">
+        <input type="checkbox" id="check_menu" />
+        <ul class="navegacion_nav">
+          <li class="nav_item">
+            <a href="./index.html"><i class="bx bxs-pizza"></i>Inicio</a>
+          </li>
+          <li class="nav_item">
+            <a href="./nuestros productos.html"
+              ><i class="bx bx-food-menu"></i>Nuestros Productos</a
+            >
+          </li>
+          <li class="nav_item">
+            <a href="./listas de precios.html"
+              ><i class="bx bx-money-withdraw"></i>Lista de Precios</a
+            >
+          </li>
+          <li class="nav_item">
+            <a href="./nosotros.html"><i class="bx bx-group"></i>Nosotros</a>
+          </li>
+          <li class="nav_item">
+            <a href="./contacto.html"
+              ><i class="bx bx-phone-call"></i>Contacto</a
+            >
+          </li>
+        </ul>
+        <label for="check_menu">
+          <i class="bx bx-menu"></i>
+        </label>
+      </nav>
+    </header>
+    <h1>Contacto</h1>
+    <section>
+      <form action="" method="post">
+        <label for="nombre">Nombre</label>
+        <input
+          type="text"
+          id="nombre"
+          name="nombre"
+          placeholder="Ingrese su nombre"
+        />
+        <label for="pedido">Pedido</label>
+        <input
+          type="number"
+          id="edad"
+          name="edad"
+          placeholder="ingrese su pedido"
+        />
+        <label for="cantidad">Hora para retirar</label>
+        <input
+          type="time"
+          id="edad"
+          name="edad"
+          placeholder="Ingrese su edad"
+        />
+
+        <input type="submit" value="Enviar" />
+        <input type="reset" value="Cancelar" />
+      </form>
+    </section>
+    <h3 id="ancla">Enlace</h3>
+
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3287.299680421394!2d-58.744403024263384!3d-34.52063467298416!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bc9801dfd3bdc7%3A0xae9e3c8451ff512c!2sLa%20Bicicleta%20Pizzas%20%26%20Empanadas!5e0!3m2!1ses!2sar!4v1697506505421!5m2!1ses!2sar"
+      width="500"
+      height="350"
+      style="border: 0"
+      allowfullscreen=""
+      loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade"
+    ></iframe>
+  </body>
+</html>
