@@ -1,0 +1,83 @@
+.seccion-grilla {
+  width: 100%;
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+.cabecera,
+.navbar,
+.seccion,
+.seccion2,
+.articulo,
+.pie {
+  background-color: rgb(255, 255, 255, 0.2);
+  padding: 10px;
+  border: 1px solid;
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 30%);
+  grid-template-rows: 100px 60px repeat(2, 350px) 50px;
+  grid-template-areas:
+    "header header header"
+    "navbar seccion seccion2"
+    "navbar seccion seccion2"
+    "navbar articulo articulo"
+    "pie pie pie";
+}
+
+header.cabecera {
+  background-color: aqua;
+  background-repeat: no-repeat;
+  background-position: center 100px;
+  background-size: cover;
+  color: blue;
+  grid-area: header;
+}
+.navbar {
+  grid-area: navbar;
+  grid-column-start: 1;
+}
+.navbar ul {
+  display: flex;
+  width: 80%;
+  align-items: start;
+  justify-content: space-around;
+}
+.seccion {
+  grid-area: seccion;
+}
+.seccion2 {
+  overflow: auto;
+  grid-area: seccion2;
+}
+.articulo {
+  overflow: auto;
+}
+.pie {
+  grid-area: pie;
+}
+
+@media (max-width: 900px) {
+  body {
+    header.cabecera {
+      font-size: 2rem;
+    }
+    .grid {
+      grid-template-areas:
+        "header header header"
+        "navbar navbar navbar"
+        "seccion seccion2 articulo"
+        "seccion seccion2 articulo"
+        "pie pie pie";
+    }
+  }
+  @media (max-width: 800px) {
+    body header.cabecera {
+      font-size: 2rem;
+    }
+  }
+}

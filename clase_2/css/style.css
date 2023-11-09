@@ -1,0 +1,281 @@
+@import url("https://fonts.googleapis.com/css2?family=Tilt+Neon&display=swap");
+
+@font-face {
+  font-family: "Brandier";
+  src: url(../css/font/BrandierTrial-Black.otf);
+}
+header.borde-redondo {
+  display: flex;
+  height: 95px;
+  width: 100%;
+  background-color: rgb(2, 173, 2);
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 10px;
+  border: 5px solid black;
+}
+.logo {
+  display: flex;
+  align-items: center;
+}
+.logo-nombre {
+  height: 90px;
+  margin-right: 10px;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+.navegacion_nav .nav_item {
+  display: inline-block;
+  background-color: white;
+  justify-content: center;
+  font-weight: 900;
+  margin-left: 5px;
+  padding: 5px;
+  border-radius: 5px;
+  border: 2px solid black;
+}
+.nav_item:hover {
+  background-color: cadetblue;
+  box-shadow: 4px 2px 4px rgba(255, 255, 255, 0.877);
+}
+.nav_item:active {
+  background-color: rgb(4, 112, 116);
+}
+.nav_item::selection {
+  content: "";
+  height: 20px;
+  width: 20px;
+  background: rgb(115, 115, 3);
+  position: absolute;
+  top: 5;
+  margin-top: 18px;
+  justify-content: flex-end;
+}
+#check_menu,
+.navegacion label {
+  display: none;
+}
+.navegacion label {
+  font-size: 2rem;
+}
+body {
+  font-family: "Tilt Neon", sans-serif;
+  min-height: 10vh;
+  background: url(../img/Entrada.jpg) no-repeat center center fixed;
+  background-size: 100% 100%;
+}
+.ul {
+  align-content: start;
+}
+.videos {
+  width: 40%;
+  height: 40%;
+  padding: 2%;
+}
+.galeria {
+  height: 50%;
+  width: 75%;
+  margin-top: 1%;
+  padding: 10px;
+  background-color: rgba(153, 205, 50, 0.547);
+  border: 5px solid yellow;
+  align-items: center;
+}
+.img-small {
+  width: 25%;
+  height: 25%;
+  border: 1px solid yellow;
+  border-radius: 1px 1% 1%;
+  padding-left: 1%;
+}
+.img-small:hover {
+  background-color: rgba(128, 128, 128, 0.275);
+  box-shadow: 2px 2px 2px 2px rgba(255, 255, 0, 0.885);
+}
+h1 {
+  font-family: "Brandier";
+  color: cyan;
+}
+.bottom-enlace {
+  background-color: #03ce43;
+  border: 5px solid yellow;
+  border-radius: 3px 3px 3px 3px;
+}
+h2 {
+  color: darkgreen;
+}
+.principal {
+  color: rgb(16, 16, 97);
+}
+.productos {
+  height: 60%;
+  width: 80%;
+}
+.box1,
+.box2,
+.box3 {
+  width: 20%;
+  height: 20vh;
+  background-color: rgb(7, 136, 228);
+  text-align: center;
+  color: black;
+  font-weight: 900;
+  margin-left: 50px;
+  margin-top: 10px;
+  border: 4px solid yellow;
+  border-radius: 10px 3px 5px;
+  padding: 10px;
+  box-sizing: border-box;
+  display: inline-block;
+  align-items: center;
+}
+p::first-letter {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: medium;
+  color: navy;
+}
+.precio {
+  font-weight: 1000;
+  justify-content: space-between;
+}
+.box4,
+.box5 {
+  display: inline-block;
+  background-color: rgb(255, 255, 255, 0.2);
+  width: 30%;
+  height: 30%;
+  justify-content: space-around;
+  align-items: center;
+  text-align: justify;
+  color: black;
+  border: 2px solid black;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+.text-content {
+  background-color: rgb(7, 136, 228);
+  width: 50%;
+  height: 300px;
+  margin: 2% 2% 2% 2%;
+  overflow: auto;
+  padding: 1%;
+}
+.box6 {
+  background-color: rgb(154, 255, 1);
+  color: black;
+  font-weight: 900;
+  width: 50%;
+  height: 50%;
+  border-radius: 5px;
+  border: 5px solid black;
+  justify-content: center;
+  margin-top: 5%;
+  box-sizing: border-box;
+}
+
+.destacado {
+  background-color: darkcyan;
+  font-weight: 1000;
+}
+.section1 {
+  justify-content: space-around;
+  padding: 1%;
+}
+.section2 {
+  width: 50%;
+  height: 50%;
+  border-radius: 5px solid yellow;
+  background-color: yellowgreen;
+  border: 5px solid yellow;
+  margin-top: 2%;
+}
+
+/* Cajas flexibles */
+
+.contenedor-padre {
+  height: 100%;
+  background-color: #03cea4;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: center;
+  align-items: center;
+  gap: 10px 10px;
+  justify-content: space-between;
+}
+
+.contenedor-hijo {
+  font-weight: 600;
+  height: 150px;
+  width: 250px;
+  justify-content: center;
+  text-align: center;
+  background-color: white;
+  margin: 1%;
+  border: 1px solid;
+  border-radius: 5px;
+}
+.contenedor-hijo:nth-child(odd) {
+  background-color: rgba(255, 255, 255, 0.585);
+}
+.pie-pagina {
+  width: 100%;
+  background-color: rgb(164, 234, 25);
+}
+.pie-pagina .grupo1 {
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 50px;
+  padding: 2px;
+}
+.pie-pagina .grupo1 .box-figure {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.log {
+  display: flex;
+  justify-content: left;
+  width: 20vh;
+  height: 100%;
+}
+.pie-pagina .grupo1 .box-figure img {
+  width: 10%;
+}
+.medios-pagos {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
+}
+.img-pagos {
+  width: 10%;
+  height: 10%;
+}
+@media (max-width: 768px) {
+  .navegacion label {
+    display: block;
+  }
+  .navegacion_nav {
+    display: none;
+  }
+  .navegacion #check_menu:checked ~ .navegacion_nav {
+    background: rgba(0, 255, 106, 0.85);
+    width: 70%;
+    height: 100vh;
+    position: absolute;
+    left: 0;
+    top: 97px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+  }
+}

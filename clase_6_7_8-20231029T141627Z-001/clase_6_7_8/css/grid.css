@@ -1,0 +1,100 @@
+/* body{
+    background-color: crimson;
+} */
+.seccion-grilla {
+    width: 100%;
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+header.cabecera, .navbar, .seccion, .seccion2, .articulo, .pie {
+    padding: 10px;
+    border: 1px solid black;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /* repeat(2,1fr) 3fr */
+    grid-template-rows: 220px 50px repeat(2, 350px) 6px;
+    grid-template-areas:
+        "header header header"
+        "navbar navbar navbar"
+        "seccion seccion articulo"
+        "seccion2 seccion2 seccion2 "
+        "pie pie pie";
+}
+
+header.cabecera {
+    background-image: url('../assets/img/travels/bali-indonesia.jpg');
+    background-repeat: no-repeat;
+    background-position: center -200px;
+    background-size: cover;
+    color: #fff;
+    grid-area: header;
+}
+
+.navbar {
+    grid-area: navbar;
+}
+
+.navbar ul {
+    display: flex;
+    width: 100%;
+    align-items: flex-end;
+    justify-content: space-around;
+}
+
+.seccion {
+    grid-area: seccion;
+}
+
+.seccion2 {
+    overflow: auto;
+    grid-area: seccion2;
+}
+
+.articulo {
+    grid-area: articulo;
+}
+
+.pie {
+    grid-area: pie;
+}
+/* queries */
+
+
+@media (max-width:992px){
+    
+    header.cabecera{
+        font-size: 2rem;
+    }
+    .grid{
+        grid-template-areas:
+        "header header header"
+        "navbar navbar navbar"
+        "seccion seccion2 articulo"
+        "seccion seccion2 articulo "
+        "pie pie pie";
+    }
+
+}
+@media (max-width:800px){
+    body{
+        background-color: green;
+    }
+    header.cabecera{
+        font-size: 4rem;
+    }
+    }
+
+    @media (min-width:420px) and (max-width:768px){
+        body{
+            background-color: #fff;
+        }
+    }
+    
