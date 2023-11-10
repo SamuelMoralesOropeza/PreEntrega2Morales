@@ -114,6 +114,13 @@ h2 {
 .productos {
   height: 50%;
   width: 50%;
+  border-radius: 10px;
+  border: 3px solid black;
+  justify-content: end;
+}
+.productos:hover {
+  color: yellowgreen;
+  box-shadow: 4px 2px 4px blue;
 }
 .box1,
 .box2,
@@ -194,12 +201,9 @@ p::first-letter {
   border: 5px solid yellow;
   margin-top: 2%;
 }
-
-/* Cajas flexibles */
-
 .contenedor-padre {
   height: 100%;
-  background-color: #03cea4;
+  background-color: #03ce28;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -211,7 +215,7 @@ p::first-letter {
 
 .contenedor-hijo {
   font-weight: 600;
-  height: 300px;
+  height: 275px;
   width: 250px;
   justify-content: center;
   text-align: center;
@@ -225,12 +229,12 @@ p::first-letter {
 }
 .pie-pagina {
   width: 100%;
-  height: 7;
+  height: 75%;
   background-color: rgb(164, 234, 25);
 }
 .pie-pagina .grupo1 {
   width: 100%;
-  max-width: 1200px;
+  max-width: 1100px;
   margin: auto;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -262,11 +266,13 @@ p::first-letter {
 .pie-pagina .grupo1 .red-social a:hover {
   color: aqua;
 }
+.pie-pagina .grupo1 .red-social a:active {
+  color: aquamarine;
+}
 .pie-pagina .grupo2 {
   justify-content: space-around;
   padding: 1%;
   align-items: center;
-
 }
 .medios-pagos {
   display: flex;
@@ -274,8 +280,11 @@ p::first-letter {
   align-items: flex-end;
 }
 .img-pagos {
-  width: 10vh;
+  background-color: white;
+  width: 10%;
   height: 15%;
+  border: 5px solid yellow;
+  border-radius: 1px 1px 1px 1px;
 }
 .pie-pagina .grupo3 {
   background-color: #03ce43;
@@ -302,7 +311,7 @@ p::first-letter {
     align-items: start;
   }
 }
-@media screen and ( max-width:500px) {
+@media screen and (max-width: 500px) {
   .pie-pagina .grupo1 {
     width: 90%;
     max-width: 1200px;
@@ -313,5 +322,3 @@ p::first-letter {
     padding: 5px;
   }
 }
-  
-
