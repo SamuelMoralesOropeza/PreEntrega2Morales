@@ -149,21 +149,6 @@ p::first-letter {
   font-weight: 1000;
   justify-content: space-between;
 }
-.box4,
-.box5 {
-  display: inline-block;
-  background-color: rgb(255, 255, 255, 0.2);
-  width: 30%;
-  height: 30%;
-  justify-content: space-around;
-  align-items: center;
-  text-align: justify;
-  color: black;
-  border: 2px solid black;
-  border-radius: 5px;
-  box-sizing: border-box;
-}
-
 .text-content {
   background-color: rgb(7, 136, 228);
   width: 50%;
@@ -190,9 +175,24 @@ p::first-letter {
   font-weight: 1000;
 }
 .section1 {
-  justify-content: space-around;
-  padding: 1%;
+  width: 100%;
+  padding: 0.5%;
+  text-align: center;
+  display: grid;
+  grid-template-columns: repeat(2, 50%);
 }
+.box4,
+.box5 {
+  display: inline-block;
+  background-color: rgba(255, 255, 255, 0.51);
+  width: 75%;
+  align-items: center;
+  color: black;
+  border: 2px solid black;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
 .section2 {
   width: 50%;
   height: 50%;
@@ -290,6 +290,9 @@ p::first-letter {
   background-color: #03ce43;
   padding: 15px 10px;
   text-align: center;
+}
+.table-success-custom {
+  background-color: #03ce43;
 }
 @media (max-width: 768px) {
   .navegacion label {
